@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Output</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            background-image: url("images/black.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
 
+        #page-wrapper {
+            width: 960px;
+            margin: 40px auto;
+            box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
+            border-radius: 12px;
+            background-image: url("images/repeating.png");
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        #header {
+            background-image: url("images/black.jpg");
+            position: relative;
+            border-radius: 12px 12px 0px 0px;
+            height: 80px;
+        }
+
+        #header h1 {
+            position: absolute;
+            left: 420px;
+            top: 5px;
+            font-size: 3em;
+            font-family: 'Devonshire', cursive;
+            color: #E35335;
+        }
+
+        #header a#logo1 img {
+            margin: 20px;
+        }
+
+        #header #toplink {
+            position: absolute;
+            top: -34px;
+            right: 10px;
+            color: white;
+            font-size: 1.8em;
+        }
+
+        #main-nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        #main-nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #main-nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        #main-nav ul li a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 1.2em;
+        }
+
+        #main-nav ul li a:hover {
+            color: #fff;
+        }
+
+        #content-wrapper {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #main-content {
+            width: 65%;
+        }
+
+        .image-r {
+            float: right;
+            border: 2px solid blue;
+            width: 300px;
+            padding: 5px;
+            background-color: white;
+            margin-left: 20px;
+        }
+
+        .text-wrap {
+            float: left;
+            width: calc(100% - 330px);
+        }
+
+        #side-content {
+            width: 30%;
+            padding-left: 20px;
+        }
+
+        #side-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #side-content ul li {
+            margin-bottom: 10px;
+        }
+
+        #footer {
+            background-color: #777;
+            height: 80px;
+            clear: both;
+            text-align: center;
+            line-height: 80px;
+            margin-top: 20px;
+            border-radius: 0 0 12px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="header">
+            <a id="logo1" href="#"><img src="images/logo3.png" alt="Logo"></a>
+            <h1>My Demo Site</h1>
+            <div id="toplink"><a href="#">Login</a></div>
+        </div>
+        <div id="main-nav">
+            <ul>
+                <li><a href="#">IIT Home</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Microsoft</a></li>
+                <li><a href="#">CNN</a></li>
+                <li><a href="#">IIT Admissions</a></li>
+            </ul>
+        </div>
+        <div id="content-wrapper">
+            <div id="main-content">
+                <h2><strong>Main Squeeze Juice</strong></h2>
+                <div class="text-wrap">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+                </div>
+                <img class="image-r" src="images/main.png" alt="Main Squeeze">
+                <div class="text-wrap">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+                    <ul>
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="side-content">
+                <h3>Interesting Articles</h3>
+                <ul>
+                    <li><a href="#">Article 1</a><div><p>Preview of very interesting article</p></div></li>
+                    <li><a href="#">Article 2</a><div><p>Preview of very interesting article</p></div></li>
+                    <li><a href="#">Article 3</a><div><p>Preview of very interesting article</p></div></li>
+                    <li><a href="#">Article 4</a><div><p>Preview of very interesting article</p></div></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">Footer Content is here</div>
+    </div>
+</body>
+</html>
